@@ -1,5 +1,26 @@
 {
 	"manifest_version": 2,
 	"name": "Save Data",
-	"version": "0.1"
+	"version": "0.1",
+	"permissions": ["tabs", "<all_urls>"],
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"all_frames": true,
+			"js": [ "background.js" ],
+			"matches": [ "*://*/*"],
+			"run_at": "document_start"
+		}
+	],
+	"browser_action": {
+		//		"default_icon": {
+		//			"19": "images/icon19.png",
+		//			"38": "images/icon38.png"
+		//		},
+		"default_title": "Save Data",
+		"default_popup": "popup.html"
+	}
 }
