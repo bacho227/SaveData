@@ -2,11 +2,7 @@
 	"manifest_version": 2,
 	"name": "Save Data",
 	"version": "0.1",
-	"permissions": ["tabs", "<all_urls>"],
-	"background": {
-		"persistent": false,
-		"scripts": ["background.js"]
-	},
+	"permissions": ["tabs", "<all_urls>", "storage"],
 	"content_scripts": [
 		{
 			"all_frames": true,

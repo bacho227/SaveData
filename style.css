@@ -1,0 +1,26 @@
+.my-list .list-group-item:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+
+.my-list .list-group-item {
+    padding: 2px;
+    border-radius: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.my-list .list-group-item .remove {
+    color: rgb(155, 155, 155);
+    opacity: 0;
+    margin-top: 2px;
+    width: 35px;
+    float: right;
+}
+
+.my-list .list-group-item:hover {
+    background-color: rgb(218, 230, 234);
+}
+
+.my-list .list-group-item:hover .remove {
+    opacity: 1;
+}
