@@ -24,3 +24,7 @@
 .my-list .list-group-item:hover .remove {
     opacity: 1;
 }
+
+.my-list .list-group-item .remove:hover {
+    color: rgb(231, 163, 163);
+}
